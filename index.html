@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shop Tailwind v4 с темами</title>
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app bg-stone-200 min-h-screen">
+      <!-- ==================================   header    ================================ -->
+      <header
+        class="flex flex-row justify-between items-center p-2 border-b-1 bg-white border-zinc-400 shadow-md"
+      >
+        <img src="src/assets/A-shop.png" alt="logo" class="w-26 h-8" />
+
+        <button
+          class="w-30 h-10 flex flex-row justify-center gap-4 items-center border-2 cursor-pointer border-bg-light rounded-sm bg-bg-light text-gray-50 hover:text-brand-light"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"
+            />
+          </svg>
+
+          <span class="text-lg">Каталог</span>
+        </button>
+        <div class="search_container flex flex-row justify-center items-center">
+          <div class="input_container relative">
+            <input
+              type="search"
+              class="w-60 h-10 p-2 border-2 border-bg-light rounded-l-sm pr-10"
+              [(ngModel)]="filter"
+              placeholder="Search for goods..."
+            />
+            <div class="absolute right-1 inset-y-2">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="rgb(124, 58, 237)"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12,16c2.206,0,4-1.794,4-4V6c0-2.217-1.785-4.021-3.979-4.021c-0.069,0-0.14,0.009-0.209,0.025C9.693,2.104,8,3.857,8,6v6 C8,14.206,9.794,16,12,16z"
+                ></path>
+                <path
+                  d="M11,19.931V22h2v-2.069c3.939-0.495,7-3.858,7-7.931h-2c0,3.309-2.691,6-6,6s-6-2.691-6-6H4 C4,16.072,7.061,19.436,11,19.931z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <button
+            class="w-26 h-10 flex flex-row justify-around items-center border-2 cursor-pointer border-bg-light rounded-r-sm bg-bg-light text-gray-50 hover:text-brand-light"
+          >
+            <span class="text-lg">Знайти</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="batton_group flex flex-row justify-between items-center gap-4"
+        >
+          <button
+            class="user_cabinet flex flex-col justify-center items-center cursor-pointer hover:text-bg-light"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="20"
+              viewBox="0 0 21 20"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.0999 2.8C4.60285 2.8 4.1999 3.20294 4.1999 3.7V16.3C4.1999 16.7971 4.60285 17.2 5.0999 17.2H15.8999C16.397 17.2 16.7999 16.7971 16.7999 16.3V3.7C16.7999 3.20294 16.397 2.8 15.8999 2.8H5.0999ZM2.3999 3.7C2.3999 2.20883 3.60873 1 5.0999 1H15.8999C17.3911 1 18.5999 2.20883 18.5999 3.7V16.3C18.5999 17.7912 17.3911 19 15.8999 19H5.0999C3.60873 19 2.3999 17.7912 2.3999 16.3V3.7Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M5.9999 5.5C5.9999 5.00294 6.40285 4.6 6.8999 4.6C7.39696 4.6 7.7999 5.00294 7.7999 5.5C7.7999 5.99706 7.39696 6.4 6.8999 6.4C6.40285 6.4 5.9999 5.99706 5.9999 5.5Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M5.9999 10C5.9999 9.50294 6.40285 9.1 6.8999 9.1C7.39696 9.1 7.7999 9.50294 7.7999 10C7.7999 10.4971 7.39696 10.9 6.8999 10.9C6.40285 10.9 5.9999 10.4971 5.9999 10Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M5.9999 14.5C5.9999 14.0029 6.40285 13.6 6.8999 13.6C7.39696 13.6 7.7999 14.0029 7.7999 14.5C7.7999 14.9971 7.39696 15.4 6.8999 15.4C6.40285 15.4 5.9999 14.9971 5.9999 14.5Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M9.5999 5.5C9.5999 5.00294 10.0028 4.6 10.4999 4.6H14.0999C14.597 4.6 14.9999 5.00294 14.9999 5.5C14.9999 5.99706 14.597 6.4 14.0999 6.4H10.4999C10.0028 6.4 9.5999 5.99706 9.5999 5.5Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M9.5999 10C9.5999 9.50294 10.0028 9.1 10.4999 9.1H14.0999C14.597 9.1 14.9999 9.50294 14.9999 10C14.9999 10.4971 14.597 10.9 14.0999 10.9H10.4999C10.0028 10.9 9.5999 10.4971 9.5999 10Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M9.5999 14.5C9.5999 14.0029 10.0028 13.6 10.4999 13.6H14.0999C14.597 13.6 14.9999 14.0029 14.9999 14.5C14.9999 14.9971 14.597 15.4 14.0999 15.4H10.4999C10.0028 15.4 9.5999 14.9971 9.5999 14.5Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+
+            <span class="cabinet_title text-xs hidden lg:block">Кабінет</span>
+          </button>
+
+          <button
+            class="user_comparre flex flex-col justify-center items-center cursor-pointer hover:text-bg-light"
+          >
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 17V16.8498C2 16.5333 2 16.3751 2.02421 16.2209C2.0457 16.084 2.08136 15.9497 2.13061 15.8202C2.18609 15.6743 2.2646 15.5369 2.42162 15.2622L6 9M2 17C2 19.2091 3.79086 21 6 21C8.20914 21 10 19.2091 10 17M2 17V16.8C2 16.52 2 16.38 2.0545 16.273C2.10243 16.1789 2.17892 16.1024 2.273 16.0545C2.37996 16 2.51997 16 2.8 16H9.2C9.48003 16 9.62004 16 9.727 16.0545C9.82108 16.1024 9.89757 16.1789 9.9455 16.273C10 16.38 10 16.52 10 16.8V17M6 9L9.57838 15.2622C9.7354 15.5369 9.81391 15.6743 9.86939 15.8202C9.91864 15.9497 9.9543 16.084 9.97579 16.2209C10 16.3751 10 16.5333 10 16.8498V17M6 9L18 7M14 15V14.8498C14 14.5333 14 14.3751 14.0242 14.2209C14.0457 14.084 14.0814 13.9497 14.1306 13.8202C14.1861 13.6743 14.2646 13.5369 14.4216 13.2622L18 7M14 15C14 17.2091 15.7909 19 18 19C20.2091 19 22 17.2091 22 15M14 15V14.8C14 14.52 14 14.38 14.0545 14.273C14.1024 14.1789 14.1789 14.1024 14.273 14.0545C14.38 14 14.52 14 14.8 14H21.2C21.48 14 21.62 14 21.727 14.0545C21.8211 14.1024 21.8976 14.1789 21.9455 14.273C22 14.38 22 14.52 22 14.8V15M18 7L21.5784 13.2622C21.7354 13.5369 21.8139 13.6743 21.8694 13.8202C21.9186 13.9497 21.9543 14.084 21.9758 14.2209C22 14.3751 22 14.5333 22 14.8498V15M12 3V8"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="comparre_title text-xs hidden lg:block"
+              >Порівняння</span
+            >
+          </button>
+
+          <button
+            class="user_favorite flex flex-col justify-center items-center cursor-pointer hover:text-bg-light"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              width="20px"
+              height="20px"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              />
+            </svg>
+            <span class="favorite_title text-xs hidden lg:block">Обране</span>
+          </button>
+
+          <button
+            class="massages flex flex-col justify-center items-center cursor-pointer hover:text-bg-light"
+          >
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 30 30"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            >
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="currentColor"
+                fill-rule="evenodd"
+                sketch:type="MSPage"
+              >
+                <g
+                  id="Icon-Set"
+                  sketch:type="MSLayerGroup"
+                  transform="translate(-413.000000, -880.000000)"
+                >
+                  <path
+                    d="M439.941,893.604 L435.958,900.343 L435.558,906.855 L416.584,896.156 L422.158,892.562 L426.142,885.822 C428.342,882.101 433.215,880.825 437.024,882.975 C440.835,885.123 442.141,889.882 439.941,893.604 L439.941,893.604 Z M423.581,905.718 C422.152,904.912 421.662,903.128 422.487,901.732 L427.662,904.65 C426.837,906.046 425.01,906.523 423.581,905.718 L423.581,905.718 Z M438.021,881.289 C433.258,878.604 427.167,880.197 424.417,884.85 L420.434,891.589 L413.001,896.383 L420.763,900.76 C419.388,903.086 420.203,906.06 422.585,907.402 C424.967,908.746 428.012,907.949 429.387,905.623 L437.148,910 L437.683,901.315 L441.666,894.576 C444.416,889.924 442.784,883.976 438.021,881.289 L438.021,881.289 Z"
+                    id="bell"
+                    sketch:type="MSShapeGroup"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+
+            <span class="massages_title text-xs hidden lg:block"
+              >Повідомлення</span
+            >
+          </button>
+        </div>
+        <button
+          class="w-30 h-10 flex flex-row justify-center gap-4 items-center border-2 cursor-pointer border-bg-light rounded-sm bg-bg-light text-gray-50 hover:text-brand-light"
+        >
+          <span class="text-lg">Кошик</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
+          </svg>
+        </button>
+      </header>
+      <!-- ==================================   header    ================================ -->
+
+      <main class="bg-stone-200">
+        <section
+          class="sidebar flex flex-col w-1/4 bg-white m-2 p-2 rounded-lg shadow-md"
+        >
+          <div class="categories ">
+            <ul class="list-none list-inside space-y-2">
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Ноутбуки та комп'ютери</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Смартфони та гаджети</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Телевізори та аудіотехніка</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Побутова техніка</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Ігрові консолі та аксесуари</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Фото- та відеотехніка</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Комп'ютерні комплектуючі</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Принтери та офісна техніка</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm  text-secondary-text"
+                  >Смарт-годинники та фітнес-браслети</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm  text-secondary-text"
+                  >Аксесуари для мобільних пристроїв</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm  text-secondary-text"
+                  >Ігри та програмне забезпечення</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm  text-secondary-text"
+                  >Розумний дім та безпека</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Навушники та портативна акустика</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Автомобільна електроніка</span
+                >
+              </li>
+              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+                <span class="text-sm text-secondary-text"
+                  >Електронні книги та аксесуари</span
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="filters p-4 border-b-2 border-zinc-400 border-dotted">
+        <h2 class="text-xl font-bold mb-4">Фільтри</h2>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="priceRange">Ціна (грн):</label>
+          <input type="range" id="priceRange" min="0" max="100000" step="1000" class="w-full">
+          <div class="flex justify-between text-sm mt-1">
+            <span>0</span>
+            <span>100,000+</span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="brandSelect">Бренд:</label>
+          <select id="brandSelect" class="w-full border border-gray-300 rounded p-2">
+            <option value="">Всі бренди</option>
+            <option value="apple">Apple</option>
+            <option value="samsung">Samsung</option>
+            <option value="sony">Sony</option>
+            <option value="lg">LG</option>
+            <option value="dell">Dell</option>
+            <option value="hp">HP</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <span class="block mb-2 font-semibold">Рейтинг:</span>
+          <div class="flex items-center">
+            <label class="flex items-center mr-4">
+              <input type="checkbox" class="mr-2">
+              <span>5 зірок</span> -->
+        </section>
+      </main>
+      <!-- ==================================  sidebar   ================================ -->
+    </div>
+  </body>
+</html>
