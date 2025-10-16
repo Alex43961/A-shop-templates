@@ -5,16 +5,16 @@
     <title>Shop Tailwind v4 с темами</title>
     <link href="src/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="app bg-stone-200 min-h-screen">
+  <body class="box-border m-0 p-0">
+    <div class="app bg-neutral-100 min-h-screen">
       <!-- ==================================   header    ================================ -->
       <header
-        class="flex flex-row justify-between items-center p-2 border-b-1 bg-white border-zinc-400 shadow-md"
+        class="flex flex-row justify-between items-center p-2 border-b-1 bg-white border-stone-400 shadow-md"
       >
         <img src="src/assets/A-shop.png" alt="logo" class="w-26 h-8" />
 
         <button
-          class="w-30 h-10 flex flex-row justify-center gap-4 items-center border-2 cursor-pointer border-bg-light rounded-sm bg-bg-light text-gray-50 hover:text-brand-light"
+          class="w-30 h-10 flex flex-row justify-center gap-4 items-center border-2 cursor-pointer border-bg-light rounded-sm bg-bg-light text-gray-50 hover:bg-violet-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@
             </div>
           </div>
           <button
-            class="w-26 h-10 flex flex-row justify-around items-center border-2 cursor-pointer border-bg-light rounded-r-sm bg-bg-light text-gray-50 hover:text-brand-light"
+            class="w-26 h-10 flex flex-row justify-around items-center border-2 cursor-pointer border-bg-light rounded-r-sm bg-bg-light text-gray-50 hover:bg-violet-800"
           >
             <span class="text-lg">Знайти</span>
             <svg
@@ -211,7 +211,7 @@
           </button>
         </div>
         <button
-          class="w-30 h-10 flex flex-row justify-center gap-4 items-center border-2 cursor-pointer border-bg-light rounded-sm bg-bg-light text-gray-50 hover:text-brand-light"
+          class="w-30 h-10 flex flex-row justify-center gap-4 items-center border-2 cursor-pointer border-bg-light rounded-sm bg-bg-light text-gray-50 hover:bg-violet-800"
         >
           <span class="text-lg">Кошик</span>
           <svg
@@ -232,83 +232,113 @@
       </header>
       <!-- ==================================   header    ================================ -->
 
-      <main class="bg-stone-200">
+      <main class="bg-neutral-100">
         <section
           class="sidebar flex flex-col w-1/4 bg-white m-2 p-2 rounded-lg shadow-md"
         >
-          <div class="categories ">
+          <div class="categories">
             <ul class="list-none list-inside space-y-2">
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Ноутбуки та комп'ютери</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Смартфони та гаджети</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Телевізори та аудіотехніка</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Побутова техніка</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Ігрові консолі та аксесуари</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Фото- та відеотехніка</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Комп'ютерні комплектуючі</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Принтери та офісна техніка</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
-                <span class="text-sm  text-secondary-text"
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
+                <span class="text-sm text-secondary-text"
                   >Смарт-годинники та фітнес-браслети</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
-                <span class="text-sm  text-secondary-text"
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
+                <span class="text-sm text-secondary-text"
                   >Аксесуари для мобільних пристроїв</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
-                <span class="text-sm  text-secondary-text"
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
+                <span class="text-sm text-secondary-text"
                   >Ігри та програмне забезпечення</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
-                <span class="text-sm  text-secondary-text"
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
+                <span class="text-sm text-secondary-text"
                   >Розумний дім та безпека</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Навушники та портативна акустика</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Автомобільна електроніка</span
                 >
               </li>
-              <li class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer">
+              <li
+                class="hover:text-bg-light ml-2 hover:bg-zinc-300 cursor-pointer"
+              >
                 <span class="text-sm text-secondary-text"
                   >Електронні книги та аксесуари</span
                 >
@@ -344,8 +374,617 @@
               <input type="checkbox" class="mr-2">
               <span>5 зірок</span> -->
         </section>
+        <!-- ==================================  sidebar   ================================ -->
       </main>
-      <!-- ==================================  sidebar   ================================ -->
+      <!-- ==================================   footer    ================================ -->
+
+      <footer class="footer bg-white">
+        <!-- ==================================   services  description ================================ -->
+        <div
+          class="services_description grid grid-cols-4 gap-0 p-4 border-b-1 border-stone-200"
+        >
+          <!-- lorry -->
+          <div
+            class="delivery_footer flex flex-row justify-between items-start gap-2"
+          >
+            <div class="delivery_icon">
+              <svg
+                fill="rgb(132, 204, 22)"
+                height="20px"
+                width="20px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                transform="matrix(-1, 0, 0, 1, 0, 0)"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <path
+                        d="M106.846,320c-28.237,0-51.2,22.963-51.2,51.2c0,28.237,22.963,51.2,51.2,51.2s51.2-22.963,51.2-51.2 C158.046,342.963,135.074,320,106.846,320z M106.846,405.333c-18.825,0-34.133-15.309-34.133-34.133s15.309-34.133,34.133-34.133 s34.133,15.309,34.133,34.133S125.662,405.333,106.846,405.333z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M396.919,320c-28.237,0-51.2,22.963-51.2,51.2c0,28.237,22.963,51.2,51.2,51.2c28.237,0,51.2-22.963,51.2-51.2 C448.12,342.963,425.148,320,396.919,320z M396.919,405.333c-18.825,0-34.133-15.309-34.133-34.133s15.309-34.133,34.133-34.133 s34.133,15.309,34.133,34.133S415.735,405.333,396.919,405.333z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M503.467,294.4h-8.533V98.133c0-4.71-3.823-8.533-8.533-8.533H221.867c-18.85,0-34.133,15.283-34.133,34.133v179.2 h-17.067v-128c0-4.71-3.823-8.533-8.533-8.533h-102.4c-2.85,0-5.521,1.425-7.1,3.797l-51.2,76.8 C0.495,248.405,0,250.052,0,251.733V345.6c0,4.71,3.823,8.533,8.533,8.533h25.378c3.627,0,7.023-2.15,8.226-5.572 c9.583-27.281,35.49-45.628,64.427-45.628c17.775,0,39.134,6.4,49.911,14.933c1.638,1.297,3.567,2.133,5.658,2.133h25.6v25.6 c0,4.71,3.823,8.533,8.533,8.533h128c3.627,0,7.023-2.15,8.226-5.572c9.583-27.281,35.49-45.628,64.427-45.628 c28.732,0,54.485,18.099,64.23,45.082c1.041,3.533,4.309,6.118,8.183,6.118h34.133c4.71,0,8.533-3.823,8.533-8.533v-42.667 C512,298.223,508.177,294.4,503.467,294.4z M119.467,238.933c0,2.355-1.911,4.267-4.267,4.267H32.452 c-3.405,0-5.444-3.797-3.55-6.63l34.133-51.2c0.785-1.186,2.125-1.903,3.55-1.903H115.2c2.355,0,4.267,1.911,4.267,4.267V238.933z "
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <div class="delivery_text flex flex-col">
+              <span class="delivery_title text-sm text-black font-bold"
+                >Доставка</span
+              >
+              <span class="delivery_description text-sm text-secondary-text"
+                >Самовивіз із магазину "A-shop", доставка за адресою або у
+                відділення"Нова Пошта" і "Meest"</span
+              >
+            </div>
+          </div>
+
+          <!-- shield -->
+          <div
+            class="warranty_footer flex flex-row justify-between items-start gap-2"
+          >
+            <div class="warranty_icon">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 16 16"
+                fill="rgb(132, 204, 22)"
+                stroke="rgb(132, 204, 22)"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 16L4.35009 13.3929C2.24773 11.8912 1 9.46667 1 6.88306V3L8 0L15 3V6.88306C15 9.46667 13.7523 11.8912 11.6499 13.3929L8 16ZM12.2071 5.70711L10.7929 4.29289L7 8.08579L5.20711 6.29289L3.79289 7.70711L7 10.9142L12.2071 5.70711Z"
+                  fill="rgb(132, 204, 22)"
+                />
+              </svg>
+            </div>
+
+            <div class="warranty_text flex flex-col">
+              <span class="warranty_title text-sm text-black font-bold"
+                >Гарантія</span
+              >
+              <span class="warranty_description text-sm text-secondary-text"
+                >Сертифікована техніка з офіційною гарантією від
+                виробника.</span
+              >
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="peyment_footer flex flex-row justify-between items-start gap-2"
+          >
+            <div class="peyment_icon">
+              <svg
+                fill="rgb(132, 204, 22)"
+                width="20px"
+                height="20px"
+                viewBox="0 0 60 60"
+                id="Capa_1"
+                version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M55.783,8H4.217C1.892,8,0,9.892,0,12.217V13v10v24.783C0,50.108,1.892,52,4.217,52h51.566C58.108,52,60,50.108,60,47.783 V23V13v-0.783C60,9.892,58.108,8,55.783,8z M3,16c0.552,0,1-0.448,1-1h4c0,0.552,0.448,1,1,1s1-0.448,1-1h4c0,0.552,0.448,1,1,1 s1-0.448,1-1h4c0,0.552,0.448,1,1,1s1-0.448,1-1h4c0,0.552,0.448,1,1,1s1-0.448,1-1h4c0,0.552,0.448,1,1,1s1-0.448,1-1h4 c0,0.552,0.448,1,1,1s1-0.448,1-1h4c0,0.552,0.448,1,1,1s1-0.448,1-1h4c0,0.552,0.448,1,1,1s1-0.448,1-1h4c0,0.552,0.448,1,1,1 s1-0.448,1-1v6c0-0.552-0.448-1-1-1s-1,0.448-1,1h-4c0-0.552-0.448-1-1-1s-1,0.448-1,1h-4c0-0.552-0.448-1-1-1s-1,0.448-1,1h-4 c0-0.552-0.448-1-1-1s-1,0.448-1,1h-4c0-0.552-0.448-1-1-1s-1,0.448-1,1h-4c0-0.552-0.448-1-1-1s-1,0.448-1,1h-4 c0-0.552-0.448-1-1-1s-1,0.448-1,1h-4c0-0.552-0.448-1-1-1s-1,0.448-1,1h-4c0-0.552-0.448-1-1-1s-1,0.448-1,1H4 c0-0.552-0.448-1-1-1s-1,0.448-1,1v-6C2,15.552,2.448,16,3,16z M58,47.783C58,49.005,57.006,50,55.783,50H4.217 C2.994,50,2,49.005,2,47.783V23h56V47.783z M2,13v-0.783C2,10.995,2.994,10,4.217,10h51.566C57.006,10,58,10.995,58,12.217V13H2z"
+                    ></path>
+                    <path
+                      d="M7,29h9c0.553,0,1-0.448,1-1s-0.447-1-1-1H7c-0.553,0-1,0.448-1,1S6.447,29,7,29z"
+                    ></path>
+                    <path
+                      d="M20,29h9c0.553,0,1-0.448,1-1s-0.447-1-1-1h-9c-0.553,0-1,0.448-1,1S19.447,29,20,29z"
+                    ></path>
+                    <path
+                      d="M7,34h1c0.553,0,1-0.448,1-1s-0.447-1-1-1H7c-0.553,0-1,0.448-1,1S6.447,34,7,34z"
+                    ></path>
+                    <path
+                      d="M14,32h-2c-0.553,0-1,0.448-1,1s0.447,1,1,1h2c0.553,0,1-0.448,1-1S14.553,32,14,32z"
+                    ></path>
+                    <path
+                      d="M18,34h1c0.553,0,1-0.448,1-1s-0.447-1-1-1h-1c-0.553,0-1,0.448-1,1S17.447,34,18,34z"
+                    ></path>
+                    <path
+                      d="M25,32h-2c-0.553,0-1,0.448-1,1s0.447,1,1,1h2c0.553,0,1-0.448,1-1S25.553,32,25,32z"
+                    ></path>
+                    <path
+                      d="M28.29,32.29C28.109,32.48,28,32.74,28,33c0,0.26,0.109,0.52,0.29,0.71C28.479,33.89,28.729,34,29,34 c0.26,0,0.52-0.11,0.71-0.29C29.89,33.52,30,33.26,30,33c0-0.26-0.11-0.52-0.29-0.71C29.34,31.92,28.66,31.92,28.29,32.29z"
+                    ></path>
+                    <circle cx="24" cy="18" r="1"></circle>
+                    <circle cx="30" cy="18" r="1"></circle>
+                    <circle cx="18" cy="18" r="1"></circle>
+                    <circle cx="6" cy="18" r="1"></circle>
+                    <circle cx="12" cy="18" r="1"></circle>
+                    <circle cx="54" cy="18" r="1"></circle>
+                    <circle cx="48" cy="18" r="1"></circle>
+                    <circle cx="36" cy="18" r="1"></circle>
+                    <circle cx="42" cy="18" r="1"></circle>
+                    <path d="M54,34H36v12h18V34z M52,44H38v-8h14V44z"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <div class="peyment_text flex flex-col">
+              <span class="peyment_title text-sm text-black font-bold"
+                >Оплата</span
+              >
+              <span class="peyment_description text-sm text-secondary-text"
+                >Оплатити покупку можливо готівкою, картою чи безготівковим
+                розрахунком.</span
+              >
+            </div>
+          </div>
+          <!-- arrow -->
+          <div
+            class="return_footer flex flex-row justify-between items-start gap-2"
+          >
+            .
+            <div class="return_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3"
+                stroke="rgb(132, 204, 22)"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                />
+              </svg>
+            </div>
+            <div class="return_text flex flex-col">
+              <span class="return_title text-sm text-black font-bold"
+                >Повернення</span
+              >
+              <span class="return_description text-sm text-secondary-text"
+                >Повернення товару відбувається протягом 14 днів після покупки,
+                у відповідності із діючим законом.</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ==================================   services  description ================================ -->
+        <!-- ==================================  main footer    ================================ -->
+        <div
+          class="main_footer flex flex-row justify-between align-top p-4 gap-0 border-b-1 border-stone-200"
+        >
+          <div
+            class="subscribe_form flex flex-col w-1/4 h-full p-4 m-4 bg-white rounded-lg shadow-md border-1 border-stone-200"
+          >
+            <form method="post" action="#">
+              <div>
+                <label
+                  for="email"
+                  class="block mb-2 text-shadow-lg font-medium text-gray-900"
+                  >Підписуйтесь на знижки!</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="email@email.con"
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="mt-2 text-white text-lg bg-bg-light hover:bg-violet-800 cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg w-full px-5 py-2.5 text-center"
+                >
+                  Підписатися
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="links_container grid grid-cols-4 gap-2 w-3/4">
+            <div class="A-shop_links text-sm text-secondary-text">
+              <div class="A-shop_title font-bold text-primary-text">A-shop</div>
+              <div class="About_title">Про компанію</div>
+              <div class="about_list">
+                <ul>
+                  <li><a href="#">Магазини</a></li>
+                  <li><a href="#">Контакти</a></li>
+                  <li><a href="#">Прес-центр</a></li>
+                  <li><a href="#">Робота в A-shop</a></li>
+                  <li><a href="#">Безпека та застереження</a></li>
+                  <li><a href="#">Тендер</a></li>
+                  <li><a href="#">Партнерам</a></li>
+                  <li><a href="#">Каталог товарів</a></li>
+                  <li><a href="#">A-shop допомагає</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="services_links text-sm text-secondary-text">
+              <div class="services_title font-bold text-primary-text">
+                Послуги і сервіси
+              </div>
+              <div class="services_list">
+                <ul>
+                  <li><a href="#">Бонусна програма</a></li>
+                  <li><a href="#">Подарункові картки</a></li>
+                  <li><a href="#">Кредит і оплата частинами</a></li>
+                  <li><a href="#">Trade In</a></li>
+                  <li><a href="#">Сервісні договори</a></li>
+                  <li><a href="#">Безготівковий рахунок</a></li>
+                  <li><a href="#">Оплата</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="Help_links text-sm text-secondary-text">
+              <div class="Help_title font-bold text-primary-text">
+                Допомога покупцеві
+              </div>
+              <div class="Help_list">
+                <ul>
+                  <li><a href="#">Центр допомоги клієнтам</a></li>
+                  <li><a href="#">Знайти замовлення</a></li>
+                  <li><a href="#">Умови доставки</a></li>
+                  <li><a href="#">Обмін і повернення товару</a></li>
+                  <li><a href="#">Гарантія</a></li>
+                  <li><a href="#">Правила користування сайтом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="Consultation_links spase-y-2">
+              <div
+                class="Consultation_title text-sm font-bold text-primary-text"
+              >
+                Консультація
+              </div>
+              <div class="Consultation_list">
+                <ul class="space-y-2 text-sm text-secondary-text">
+                  <li>
+                    <span
+                      class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-bg-light"
+                      >0-800-303-505</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-bg-light"
+                      >0-800-600-506</span
+                    >
+                  </li>
+                  <li><span>Безкоштовно по Україні</span></li>
+                  <li><span>08:00-21:00 Пн-Нд</span></li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex flex-row items-center gap-2 hover:underline"
+                    >
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                          stroke="#000000"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <rect
+                          x="3"
+                          y="5"
+                          width="18"
+                          height="14"
+                          rx="2"
+                          stroke="#000000"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      info@A-shop.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex flex-row items-center gap-2 hover:underline"
+                    >
+                      <!-- help-center -->
+                      <svg
+                        fill="#000000"
+                        width="24px"
+                        height="24px"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="800px"
+                        height="800px"
+                        viewBox="0 0 93.936 93.936"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <path
+                            d="M80.179,13.758c-18.342-18.342-48.08-18.342-66.422,0c-18.342,18.341-18.342,48.08,0,66.421
+		              c18.342,18.342,48.08,18.342,66.422,0C98.521,61.837,98.521,32.099,80.179,13.758z M44.144,83.117
+		              c-4.057,0-7.001-3.071-7.001-7.305c0-4.291,2.987-7.404,7.102-7.404c4.123,0,7.001,3.044,7.001,7.404
+		              C51.246,80.113,48.326,83.117,44.144,83.117z M54.73,44.921c-4.15,4.905-5.796,9.117-5.503,14.088l0.097,2.495
+		              c0.011,0.062,0.017,0.125,0.017,0.188c0,0.58-0.47,1.051-1.05,1.051c-0.004-0.001-0.008-0.001-0.012,0h-7.867
+		              c-0.549,0-1.005-0.423-1.047-0.97l-0.202-2.623c-0.676-6.082,1.508-12.218,6.494-18.202c4.319-5.087,6.816-8.865,6.816-13.145
+		                  c0-4.829-3.036-7.536-8.548-7.624c-3.403,0-7.242,1.171-9.534,2.913c-0.264,0.201-0.607,0.264-0.925,0.173
+		                    s-0.575-0.327-0.693-0.636l-2.42-6.354c-0.169-0.442-0.02-0.943,0.364-1.224c3.538-2.573,9.441-4.235,15.041-4.235
+		                    c12.36,0,17.894,7.975,17.894,15.877C63.652,33.765,59.785,38.919,54.73,44.921z"
+                          />
+                        </g>
+                      </svg>
+                      Центр допомоги
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex flex-row items-center gap-2 hover:underline"
+                    >
+                      <!-- chat -->
+                      <svg
+                        fill="#000000"
+                        width="24px"
+                        height="24px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512 512"
+                        enable-background="new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472 c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"
+                          ></path>
+                          <g>
+                            <path
+                              d="M384,207.828C384,163.75,341.016,128,288,128c-53,0-96,35.75-96,79.828c0,44.094,43,79.828,96,79.828 c17.484,0,38.406-7.766,38.406-7.766l52.812,24.062l-11.234-51.281C367.984,252.672,384,227.344,384,207.828z M327.062,262.594 l-6.219,2.281c-5.094,1.875-20.953,6.766-32.844,6.766c-44.109,0-80-28.625-80-63.812s35.891-63.812,80-63.812 s79.984,28.625,79.984,63.812c0,10.734-8.266,27.953-13.516,36.297l-3.5,5.547l5.781,26.453L327.062,262.594z"
+                            ></path>
+                            <path
+                              d="M224,351.688c-11.891,0-27.75-4.891-32.859-6.766l-6.172-2.281l-29.719,13.531l5.781-26.453l-3.5-5.547 C152.297,315.844,144,298.609,144,287.875c0-22.375,14.578-42.016,36.5-53.406c-1.75-5.188-3.062-10.531-3.781-16.016 C147.656,232.156,128,258.094,128,287.875c0,19.5,16,44.844,16,44.844L132.781,384l52.812-24.062c0,0,20.922,7.766,38.406,7.766 c48.422,0,88.375-30.266,94.938-68.734c-5,1.344-10.953,2.641-17.266,3.547C293.312,330.641,261.781,351.688,224,351.688z"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+                      Чат на сайті
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex flex-row items-center gap-2 hover:underline"
+                    >
+                      <!-- telegram -->
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="16"
+                          cy="16"
+                          r="14"
+                          fill="url(#paint0_linear_87_7225)"
+                        />
+                        <path
+                          d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z"
+                          fill="white"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_87_7225"
+                            x1="16"
+                            y1="2"
+                            x2="16"
+                            y2="30"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#37BBFE" />
+                            <stop offset="1" stop-color="#007DBB" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      Telegram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex flex-row items-center gap-2">
+                      <!-- insta -->
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="2"
+                          y="2"
+                          width="28"
+                          height="28"
+                          rx="6"
+                          fill="url(#paint0_radial_87_7153)"
+                        />
+                        <rect
+                          x="2"
+                          y="2"
+                          width="28"
+                          height="28"
+                          rx="6"
+                          fill="url(#paint1_radial_87_7153)"
+                        />
+                        <rect
+                          x="2"
+                          y="2"
+                          width="28"
+                          height="28"
+                          rx="6"
+                          fill="url(#paint2_radial_87_7153)"
+                        />
+                        <path
+                          d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                          fill="white"
+                        />
+                        <defs>
+                          <radialGradient
+                            id="paint0_radial_87_7153"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"
+                          >
+                            <stop stop-color="#B13589" />
+                            <stop offset="0.79309" stop-color="#C62F94" />
+                            <stop offset="1" stop-color="#8A3AC8" />
+                          </radialGradient>
+                          <radialGradient
+                            id="paint1_radial_87_7153"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"
+                          >
+                            <stop stop-color="#E0E8B7" />
+                            <stop offset="0.444662" stop-color="#FB8A2E" />
+                            <stop offset="0.71474" stop-color="#E2425C" />
+                            <stop
+                              offset="1"
+                              stop-color="#E2425C"
+                              stop-opacity="0"
+                            />
+                          </radialGradient>
+                          <radialGradient
+                            id="paint2_radial_87_7153"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"
+                          >
+                            <stop offset="0.156701" stop-color="#406ADC" />
+                            <stop offset="0.467799" stop-color="#6A45BE" />
+                            <stop
+                              offset="1"
+                              stop-color="#6A45BE"
+                              stop-opacity="0"
+                            />
+                          </radialGradient>
+                        </defs>
+                      </svg>
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex flex-row items-center gap-2">
+                      <!-- viber -->
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 52 52"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <title>Viber-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                          id="Icons"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <g
+                            id="Color-"
+                            transform="translate(-598.000000, -758.000000)"
+                            fill="#7F4DA0"
+                          >
+                            <path
+                              d="M624,810 C638.359403,810 650,798.359403 650,784 C650,769.640597 638.359403,758 624,758 C609.640597,758 598,769.640597 598,784 C598,798.359403 609.640597,810 624,810 Z M625.557163,799.409207 C627.325063,799.188564 628.753733,798.762672 630.321233,797.998094 C631.862939,797.243741 632.849644,796.530492 634.155019,795.232271 C635.37816,794.005859 636.056551,793.077041 636.776002,791.635145 C637.778174,789.623608 638.348632,787.232396 638.446219,784.599993 C638.482254,783.702032 638.456556,783.50185 638.25094,783.245321 C637.86039,782.747507 637.002091,782.829703 636.709224,783.388976 C636.616662,783.573725 636.590964,783.732729 636.560135,784.451177 C636.508729,785.554433 636.431719,786.267682 636.27751,787.119522 C635.671103,790.460024 634.067654,793.128369 631.508319,795.042409 C629.375578,796.643375 627.170843,797.423387 624.282692,797.592702 C623.306228,797.649143 623.136647,797.685029 622.915679,797.854391 C622.504456,798.177682 622.483974,798.9371 622.879644,799.291164 C623.121199,799.511855 623.290771,799.542627 624.128492,799.516968 C624.565327,799.501582 625.207683,799.450263 625.557163,799.409207 L625.557163,799.409207 Z M613.809012,798.854999 C613.98892,798.793445 614.266425,798.649789 614.425756,798.547142 C615.402134,797.900559 618.120799,794.426647 619.009917,792.692195 C619.518641,791.70186 619.688213,790.968064 619.528978,790.424129 C619.364432,789.839149 619.092143,789.531244 617.874123,788.551135 C617.385891,788.156063 616.928478,787.750671 616.856589,787.642901 C616.67156,787.376051 616.522471,786.852663 616.522471,786.483204 C616.527687,785.626251 617.082688,784.071435 617.812475,782.875805 C618.377717,781.947024 619.39013,780.756602 620.392302,779.84316 C621.569167,778.765517 622.607278,778.031815 623.779022,777.4519 C625.284788,776.702756 626.204735,776.512894 626.877996,776.825864 C627.047567,776.902853 627.227389,777.0055 627.284002,777.051621 C627.335313,777.097836 627.731079,777.580217 628.162784,778.113821 C628.995289,779.160683 629.185438,779.329998 629.755896,779.524982 C630.480563,779.771285 631.220592,779.704618 631.965742,779.324885 C632.531079,779.032366 633.76447,778.267798 634.561026,777.713628 C635.609379,776.979831 637.850063,775.153043 638.153362,774.788658 C638.687784,774.13185 638.780346,773.290379 638.42053,772.361503 C638.040222,771.381489 636.560154,769.54439 635.527163,768.759265 C634.591855,768.051128 633.92893,767.779251 633.05526,767.738158 C632.335809,767.702263 632.037726,767.763817 631.117779,768.14355 C623.902394,771.11464 618.141368,775.548114 613.567447,781.639157 C611.177779,784.820617 609.358473,788.120102 608.114745,791.542752 C607.390173,793.538846 607.354224,794.406072 607.950294,795.427217 C608.207307,795.858231 609.301946,796.925592 610.098502,797.520807 C611.424455,798.506067 612.035983,798.870414 612.524215,798.973014 C612.858247,799.04487 613.438945,798.988429 613.809012,798.854999 L613.809012,798.854999 Z M625.911773,795.688935 C629.031324,795.232271 631.446691,793.785177 633.029562,791.43501 C633.91868,790.111111 634.47368,788.556295 634.663839,786.888605 C634.730607,786.277956 634.730607,785.164427 634.658718,784.979678 C634.591855,784.80525 634.376007,784.569173 634.190969,784.471724 C633.990569,784.369076 633.564079,784.379302 633.327644,784.502496 C632.931879,784.702593 632.813714,785.020771 632.813714,785.882837 C632.813714,787.211849 632.469355,788.612736 631.873285,789.700606 C631.194894,790.942404 630.208198,791.968672 629.005635,792.681969 C627.972644,793.297732 626.4463,793.754405 625.053579,793.867278 C624.549889,793.908372 624.272384,794.010981 624.082235,794.231625 C623.789368,794.56519 623.758454,795.01675 624.00513,795.391313 C624.272375,795.806969 624.683502,795.873684 625.911773,795.688935 L625.911773,795.688935 Z M627.006411,791.814743 C628.018825,791.599213 628.794898,791.214367 629.457823,790.593454 C630.310906,789.787877 630.778646,788.812881 630.984157,787.411993 C631.122909,786.498599 631.066382,786.139423 630.742601,785.841791 C630.439407,785.564706 629.879286,785.554433 629.540048,785.816132 C629.293372,786.00088 629.216267,786.195864 629.15974,786.724365 C629.092972,787.427389 628.969591,787.919995 628.758949,788.376716 C628.306657,789.346542 627.510101,789.849431 626.163665,790.013633 C625.531464,790.090622 625.341315,790.162449 625.135794,790.403592 C624.760607,790.850039 624.90448,791.573563 625.423541,791.840412 C625.618906,791.9379 625.701131,791.948173 626.132751,791.922513 C626.400005,791.907118 626.79577,791.860949 627.006411,791.814743 L627.006411,791.814743 Z"
+                              id="Viber"
+                              transform="translate(624.000000, 784.000000) scale(1, -1) translate(-624.000000, -784.000000) "
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+                      Viber
+                    </a>
+                  </li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================================  main footer    ================================ -->
+        <div class="p-2 m-2">
+          <p>&copy; Всі права захищені ТОВ "Інтернет-магазин" 2025</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
